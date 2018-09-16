@@ -1,5 +1,5 @@
 # GPA Calculator
-A small program that calculates your GPA. This calculator was based on Istanbul University's grading system where:
+A small program that calculates your GPA. This calculator is based on Istanbul University's grading system where:
 
 - AA: 4.0
 - BA: 3.5

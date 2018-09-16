@@ -1,3 +1,6 @@
+import sys
+import time
+
 classes = {}
 grade_letters = {"AA": 4.0,
                  "BA": 3.5,
@@ -58,7 +61,22 @@ def class_collect():
 
         a = a + 1
 
-    print(calculate(classes, grade_letters))
+    print("Your GPA is: " + str(calculate(classes, grade_letters)) + "\n")
+
+    print("Would you like to run the program again?" + "\n")
+    print("     1 - Yes             2 - No" + "\n")
+    while True:
+        selection = input("> ")
+        print("")
+        if selection == '1' or selection.lower() == "yes":
+            class_collect()
+        elif selection == '2' or selection.lower() == "no":
+            print("Quitting...")
+            time.sleep(0.5)
+            sys.exit()
+        else:
+            print("Please choose what to do by either inputting a corresponding number or word." + "\n")
+            continue
 
 
 def calculate(classes, grade_letters):
